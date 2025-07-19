@@ -34,7 +34,7 @@ let username: String = "John Doe"
 BasicPref.getInstance().setString("name", username)
 
 // other types
-BasicPref.getInstance().setBoolean("is_login", false)
+BasicPref.getInstance().setBoolean("is_login", true)
 BasicPref.getInstance().setFloat("price", 32.77)
 BasicPref.getInstance().setInt("click_count", 99)
 ```
@@ -46,9 +46,9 @@ BasicPref.getInstance().getString("name", "default value")
 // if key declared before function returns 'John Doe' else function returns 'default value'.
 
 // other types
-BasicPref.getInstance().getBoolean("is_login", false) // second parameter is default value
-BasicPref.getInstance().getFloat("price", 0)
-BasicPref.getInstance().getInt("click_count", 0)
+BasicPref.getInstance().getBoolean("is_login", false) // => true
+BasicPref.getInstance().getFloat("price", 0) // => 32.77
+BasicPref.getInstance().getInt("click_count", 0) // => 99
 ```
 
 Remove key-value pair:
