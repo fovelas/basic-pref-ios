@@ -25,7 +25,7 @@ https://github.com/fovelas/basic-pref-ios
 
 ---
 
-### Usage
+### Usage
 
 Declare key-value pair:
 
